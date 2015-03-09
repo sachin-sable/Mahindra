@@ -177,7 +177,7 @@ public class MainActivity extends Activity {
 		Fragment fragment = null;
 		switch (position) {
 		case 0:
-			fragment = new MenuFragment(mDrawerLayout, mDrawerList);
+			fragment = new DashboardFragment(mDrawerLayout, mDrawerList);
 			break;
 		case 1:
 			fragment = new HomeFragment(mDrawerLayout, mDrawerList);

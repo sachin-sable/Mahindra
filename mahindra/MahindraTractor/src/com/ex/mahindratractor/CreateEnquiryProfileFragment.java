@@ -26,7 +26,7 @@ public class CreateEnquiryProfileFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
             Bundle savedInstanceState) {
  
-        View rootView = inflater.inflate(R.layout.create_enquiry_profile, container, false);
+        View rootView = inflater.inflate(R.layout.create_enquiry_3, container, false);
         
         ImageView img=(ImageView)rootView.findViewById(R.id.home);
       

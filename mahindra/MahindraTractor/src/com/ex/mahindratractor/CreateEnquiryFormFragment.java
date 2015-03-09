@@ -27,7 +27,7 @@ public class CreateEnquiryFormFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
             Bundle savedInstanceState) {
  
-        View rootView = inflater.inflate(R.layout.create_enquiry_form, container, false);
+        View rootView = inflater.inflate(R.layout.create_enquiry_2, container, false);
         
         ImageView img=(ImageView)rootView.findViewById(R.id.home);
         Button next_btn=(Button)rootView.findViewById(R.id.ce_next_btn);

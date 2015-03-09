@@ -27,7 +27,7 @@ public class HomeFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
             Bundle savedInstanceState) {
  
-        View rootView = inflater.inflate(R.layout.create_enquiry, container, false);
+        View rootView = inflater.inflate(R.layout.create_enquiry_1, container, false);
         
         ImageView img=(ImageView)rootView.findViewById(R.id.home);
         Button next_btn=(Button)rootView.findViewById(R.id.cq_next_btn);

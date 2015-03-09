@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg" >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:scaleType="fitStart"
+        android:src="@drawable/header" />
+
+    <LinearLayout
+        android:id="@+id/loginLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/userID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/login_box"
+            android:inputType="textPersonName"
+            android:paddingBottom="5dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:hint="User ID"
+            android:paddingTop="5dp"
+            android:textColorHint="#88FFFFFF"
+            android:drawablePadding="5dp"
+            android:drawableLeft="@drawable/user_id"
+            android:singleLine="true"
+            android:textColor="#FFFFFF" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/login_box"
+            android:inputType="textPassword"
+            android:drawableLeft="@drawable/password"
+            android:paddingBottom="5dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:hint="Password"
+             android:textColorHint="#88FFFFFF"
+            android:drawablePadding="5dp"
+            android:paddingTop="5dp"
+            android:singleLine="true"
+            android:textColor="#FFFFFF" />
+
+        <ImageButton
+            android:id="@+id/loginButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/login_selector" 
+            android:background="@null"/>
+    </LinearLayout>
+
+</RelativeLayout>
