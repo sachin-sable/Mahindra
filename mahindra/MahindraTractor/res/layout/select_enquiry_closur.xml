@@ -1,0 +1,85 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg1"
+   
+    tools:context="${relativePackage}.${activityClass}" >
+<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#84D327"
+         >
+
+        <LinearLayout
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="#6BB019" 
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/menu48" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enquiry Closure"
+            android:textColor="#ffffff" 
+            android:layout_marginLeft="10dp"
+            android:textSize="22dp"
+            android:layout_gravity="center_vertical"/>
+
+       
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:background="#ffffff"
+        android:gravity="center"
+        android:layout_gravity="center">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+           
+			android:paddingTop="5dp"
+			android:paddingBottom="5dp"
+            android:paddingLeft="15dp"
+            android:text="Enquiry - 5567"
+            android:textColor="#FF1C3E"
+            android:gravity="center"
+            android:textSize="18sp"/>
+    </RelativeLayout>
+    <Spinner android:id="@+id/spinner"
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:background="@drawable/btn_dropdown"
+	         android:layout_marginLeft="15dp"
+	         android:layout_marginRight="15dp"
+	         android:layout_marginTop="10dp"
+	         
+	         android:spinnerMode="dropdown"
+    />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+      
+       android:layout_marginTop="100dp"
+        android:background="@drawable/next_bttn"
+        
+        android:layout_gravity="center"/>
+
+</LinearLayout>

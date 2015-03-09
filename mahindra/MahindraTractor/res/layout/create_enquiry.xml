@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg1" >
+    
+    <ImageView android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:src="@drawable/title_banner"
+        android:scaleType="fitXY"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#84D327"
+         >
+
+        <LinearLayout
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="#6BB019" 
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/home"
+                android:clickable="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/menu48" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Create Enquiry profile"
+            android:textColor="#ffffff" 
+            android:layout_marginLeft="10dp"
+            android:textSize="22dp"
+            android:layout_gravity="center_vertical"/>
+
+       
+    </LinearLayout>
+    <LinearLayout
+            android:layout_width="200dp"
+          
+            android:layout_height="30dp"
+            android:background="#FFffff"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:layout_gravity="center" >
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:src="@drawable/date" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="0dp"
+                
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:text="Expiry Date" 
+                android:layout_weight="2"
+                android:textColor="#ffffff"
+                android:gravity="center"
+                android:background="#E41937"
+                android:textSize="14dp"/>
+
+        </LinearLayout>
+<RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:background="#ffffff">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           android:layout_marginLeft="40dp"
+			android:paddingTop="2dp"
+			android:paddingBottom="2dp"
+            android:paddingLeft="15dp"
+            android:text="Customer Name"
+           
+            android:textColor="#FF1C3E"
+            android:textSize="14sp"/>
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/cust_name" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:background="#ffffff">
+ <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           android:layout_marginLeft="40dp"
+			android:paddingTop="2dp"
+			android:paddingBottom="2dp"
+            android:paddingLeft="15dp"
+            android:text="Father Name"
+           
+            android:textColor="#FF1C3E"
+            android:textSize="14sp"/>
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/fathername_icon" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:background="#ffffff">
+
+         <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           android:layout_marginLeft="40dp"
+			android:paddingTop="2dp"
+			android:paddingBottom="2dp"
+            android:paddingLeft="15dp"
+            android:text="Select Tehsil"
+           
+            android:textColor="#FF1C3E"
+            android:textSize="14sp"/>
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/tehsils_icon" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:background="#ffffff">
+
+       <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           android:layout_marginLeft="40dp"
+			android:paddingTop="2dp"
+			android:paddingBottom="2dp"
+            android:paddingLeft="15dp"
+            android:text="Select Village"
+           
+            android:textColor="#FF1C3E"
+            android:textSize="14sp"/>
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/select_village" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:background="#ffffff">
+
+         <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           android:layout_marginLeft="40dp"
+			android:paddingTop="2dp"
+			android:paddingBottom="2dp"
+            android:paddingLeft="15dp"
+            android:text="Select Model"
+           
+            android:textColor="#FF1C3E"
+            android:textSize="14sp"/>
+
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/model" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:background="#ffffff">
+
+         <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           android:layout_marginLeft="40dp"
+			android:paddingTop="2dp"
+			android:paddingBottom="2dp"
+            android:paddingLeft="15dp"
+            android:text="Expected Purchase Date"
+           
+            android:textColor="#FF1C3E"
+            android:textSize="14sp"/>
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/date" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp" 
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:background="#ffffff">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+           android:layout_marginLeft="40dp"
+			
+			android:gravity="center"
+			android:paddingBottom="2dp"
+            android:paddingLeft="15dp"
+            android:text="Mobile Number"
+            android:textColor="#FF1C3E"
+            android:textSize="14sp"/>
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/mobile" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/cq_next_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/next_bttn" />
+
+</LinearLayout>
