@@ -1,291 +1,211 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.ex.mahindratractor"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:background="@drawable/bg1" >
-    
-    <ImageView android:layout_width="match_parent"
+    android:background="@drawable/bg1"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:src="@drawable/header"
         android:scaleType="fitStart"
-        />
+        android:src="@drawable/header" />
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:background="#84D327"
-         >
+        android:background="#84D327" >
 
         <LinearLayout
             android:layout_width="70dp"
             android:layout_height="match_parent"
-            android:orientation="vertical"
-            android:background="#6BB019" 
-            android:gravity="center">
+            android:background="#6BB019"
+            android:gravity="center"
+            android:orientation="vertical" >
 
             <ImageView
                 android:id="@+id/home"
-                android:clickable="true"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/menu48" />
-
+                android:clickable="true"
+                android:src="@drawable/collapse" />
         </LinearLayout>
 
         <TextView
             android:id="@+id/textView1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Create Enquiry profile"
-            android:textColor="#ffffff" 
+            android:layout_gravity="center_vertical"
             android:layout_marginLeft="10dp"
-            android:textSize="22dp"
-            android:layout_gravity="center_vertical"/>
-
-       
+            android:text="Create Enquiry profile"
+            android:textColor="#ffffff"
+            android:textSize="22dp" />
     </LinearLayout>
-    <LinearLayout
-            android:layout_width="200dp"
-          
-            android:layout_height="30dp"
-            android:background="#FFffff"
-            android:orientation="horizontal"
-            android:weightSum="3"
-            android:layout_marginTop="10dp"
-            android:gravity="center_vertical"
-            android:layout_gravity="center" >
+
+    <!-- <LinearLayout
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="#FFffff"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:weightSum="3" >
 
         <ImageView
             android:id="@+id/imageView2"
             android:layout_width="0dp"
+            android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:layout_height="wrap_content"
             android:src="@drawable/date" />
 
-            <TextView
-                android:id="@+id/textView9"
-                android:layout_width="0dp"
-                
-                android:layout_height="match_parent"
-                android:layout_margin="1dp"
-                android:text="Expiry Date" 
-                android:layout_weight="2"
-                android:textColor="#ffffff"
-                android:gravity="center"
-                android:background="#E41937"
-                android:textSize="14dp"/>
-
-        </LinearLayout>
-<RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" 
-        android:layout_marginLeft="15dp"
-        android:layout_marginRight="15dp"
-        android:layout_marginTop="10dp"
-        android:background="#ffffff">
-
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-           android:layout_marginLeft="40dp"
-			android:paddingTop="2dp"
-			android:paddingBottom="2dp"
-            android:paddingLeft="15dp"
-            android:text="Customer Name"
-           
-            android:textColor="#FF1C3E"
-            android:textSize="14sp"/>
-
-        <ImageView
-            android:id="@+id/imageView8"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
-            android:layout_centerVertical="true"
-            android:layout_marginLeft="10dp"
-            android:src="@drawable/cust_name" />
-
-    </RelativeLayout>
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" 
-        android:layout_marginLeft="15dp"
-        android:layout_marginRight="15dp"
-        android:layout_marginTop="10dp"
-        android:background="#ffffff">
- <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-           android:layout_marginLeft="40dp"
-			android:paddingTop="2dp"
-			android:paddingBottom="2dp"
-            android:paddingLeft="15dp"
-            android:text="Father Name"
-           
-            android:textColor="#FF1C3E"
-            android:textSize="14sp"/>
-
-        <ImageView
-            android:id="@+id/imageView3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
-            android:layout_centerVertical="true"
-            android:layout_marginLeft="10dp"
-            android:src="@drawable/fathername_icon" />
-    </RelativeLayout>
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" 
-        android:layout_marginLeft="15dp"
-        android:layout_marginRight="15dp"
-        android:layout_marginTop="10dp"
-        android:background="#ffffff">
-
-         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-           android:layout_marginLeft="40dp"
-			android:paddingTop="2dp"
-			android:paddingBottom="2dp"
-            android:paddingLeft="15dp"
-            android:text="Select Tehsil"
-           
-            android:textColor="#FF1C3E"
-            android:textSize="14sp"/>
-
-        <ImageView
-            android:id="@+id/imageView4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
-            android:layout_centerVertical="true"
-            android:layout_marginLeft="10dp"
-            android:src="@drawable/tehsils_icon" />
-    </RelativeLayout>
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" 
-        android:layout_marginLeft="15dp"
-        android:layout_marginRight="15dp"
-        android:layout_marginTop="10dp"
-        android:background="#ffffff">
-
-       <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-           android:layout_marginLeft="40dp"
-			android:paddingTop="2dp"
-			android:paddingBottom="2dp"
-            android:paddingLeft="15dp"
-            android:text="Select Village"
-           
-            android:textColor="#FF1C3E"
-            android:textSize="14sp"/>
-
-        <ImageView
-            android:id="@+id/imageView5"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
-            android:layout_centerVertical="true"
-            android:layout_marginLeft="10dp"
-            android:src="@drawable/select_village" />
-    </RelativeLayout>
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" 
-        android:layout_marginLeft="15dp"
-        android:layout_marginRight="15dp"
-        android:layout_marginTop="10dp"
-        android:background="#ffffff">
-
-         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-           android:layout_marginLeft="40dp"
-			android:paddingTop="2dp"
-			android:paddingBottom="2dp"
-            android:paddingLeft="15dp"
-            android:text="Select Model"
-           
-            android:textColor="#FF1C3E"
-            android:textSize="14sp"/>
-
-        <ImageView
-            android:id="@+id/imageView9"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
-            android:layout_centerVertical="true"
-            android:layout_marginLeft="10dp"
-            android:src="@drawable/model" />
-    </RelativeLayout>
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" 
-        android:layout_marginLeft="15dp"
-        android:layout_marginRight="15dp"
-        android:layout_marginTop="10dp"
-        android:background="#ffffff">
-
-         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-           android:layout_marginLeft="40dp"
-			android:paddingTop="2dp"
-			android:paddingBottom="2dp"
-            android:paddingLeft="15dp"
-            android:text="Expected Purchase Date"
-           
-            android:textColor="#FF1C3E"
-            android:textSize="14sp"/>
-
-        <ImageView
-            android:id="@+id/imageView6"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
-            android:layout_centerVertical="true"
-            android:layout_marginLeft="10dp"
-            android:src="@drawable/date" />
-    </RelativeLayout>
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="30dp" 
-        android:layout_marginLeft="15dp"
-        android:layout_marginRight="15dp"
-        android:layout_marginTop="10dp"
-        android:background="#ffffff">
-
-        <TextView
-            android:layout_width="wrap_content"
+            android:id="@+id/textView9"
+            android:layout_width="0dp"
             android:layout_height="match_parent"
-           android:layout_marginLeft="40dp"
-			
-			android:gravity="center"
-			android:paddingBottom="2dp"
-            android:paddingLeft="15dp"
-            android:text="Mobile Number"
-            android:textColor="#FF1C3E"
-            android:textSize="14sp"/>
+            android:layout_margin="1dp"
+            android:layout_weight="2"
+            android:background="#E41937"
+            android:gravity="center"
+            android:text="Expiry Date"
+            android:textColor="#ffffff"
+            android:textSize="14dp" />
+    </LinearLayout> -->
+	<TextView android:id="@+id/selectDate"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:background="@drawable/login_box"
+	    android:layout_gravity="center"
+	    android:drawableLeft="@drawable/date1"/>
+    <ScrollView
+        android:id="@+id/formScroll"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="10dp"
+        android:layout_weight="1"
+        android:fillViewport="true" >
 
-        <ImageView
-            android:id="@+id/imageView7"
-            android:layout_width="wrap_content"
-            android:layout_height="30dp"
-            android:layout_alignParentLeft="true"
-            android:layout_centerVertical="true"
-            android:layout_marginLeft="10dp"
-            android:src="@drawable/mobile" />
-    </RelativeLayout>
+        <LinearLayout
+            android:id="@+id/createEnquireForm1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/custName"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:background="@drawable/text_field"
+                android:drawableLeft="@drawable/cust_name"
+                android:drawablePadding="10dp"
+                android:hint="Customer Name"
+                android:inputType="textPersonName"
+                android:maxLength="30"
+                android:padding="5dp"
+                android:textColor="#FF1C3E"
+                android:textColorHint="#88FF1c3E" />
+
+            <EditText
+                android:id="@+id/fatherName"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/text_field"
+                android:drawableLeft="@drawable/fathers_icon"
+                android:drawablePadding="10dp"
+                android:hint="Father Name"
+                android:inputType="textPersonName"
+                android:maxLength="30"
+                android:padding="5dp"
+                android:textColor="#FF1C3E"
+                android:textColorHint="#88FF1c3E" />
+
+            <!-- <com.ex.views.MenuDropDown
+                android:id="@+id/customSpinner"
+                android:layout_width="wrap_content"
+               android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/text_field"
+                android:drawSelectorOnTop="true"
+                android:gravity="bottom"
+                app:dropDownAnchor="@+id/parent" > 
+            </com.ex.views.MenuDropDown>-->
+            <TextView android:id="@+id/selectTehsil"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:padding="5dp"
+                android:drawablePadding="10dp"
+                android:text="Select Tehsil"
+                android:textColor="#FF1C3E"
+                android:background="@drawable/text_field"
+                android:drawableLeft="@drawable/tehsils_icon"
+                android:drawableRight="@drawable/arrow"
+              />
+            <TextView android:id="@+id/selectVillage"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:padding="5dp"
+                android:textColor="#FF1C3E"
+                android:drawablePadding="10dp"
+                android:text="Select Village"
+                
+                android:background="@drawable/text_field"
+                android:drawableLeft="@drawable/select_village"
+                android:drawableRight="@drawable/arrow"
+              />
+           <TextView android:id="@+id/selectModel"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:padding="5dp"
+                android:drawablePadding="10dp"
+                android:text="Select Model"
+                android:textColor="#FF1C3E"
+                android:background="@drawable/text_field"
+                android:drawableLeft="@drawable/model"
+                android:drawableRight="@drawable/arrow"
+              />
+           <EditText
+                android:id="@+id/purchaseDate"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/text_field"
+                android:drawableLeft="@drawable/e_date_icon"
+                android:drawablePadding="10dp"
+                android:hint="Expected Purchase Date"
+                android:inputType="textPersonName"
+                android:maxLength="30"
+                android:padding="5dp"
+                android:textColor="#FF1C3E"
+                android:textColorHint="#88FF1c3E" />
+           <EditText
+                android:id="@+id/mobileNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/text_field"
+                android:drawableLeft="@drawable/mobile"
+                android:drawablePadding="10dp"
+                android:hint="Mobile Number"
+                android:inputType="textPersonName"
+                android:maxLength="30"
+                android:padding="5dp"
+                android:textColor="#FF1C3E"
+                android:textColorHint="#88FF1c3E" />
+        </LinearLayout>
+    </ScrollView>
 
     <Button
         android:id="@+id/cq_next_btn"
         android:layout_width="wrap_content"
-        android:layout_height="50dp"
+        android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginTop="30dp"
-        android:background="@drawable/next_bttn" />
+        android:layout_marginBottom="50dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/next_selector" />
 
 </LinearLayout>

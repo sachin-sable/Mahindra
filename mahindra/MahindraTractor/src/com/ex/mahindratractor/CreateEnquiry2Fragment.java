@@ -10,13 +10,13 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.ListView;
 
-public class CreateEnquiryProfileFragment extends Fragment {
+public class CreateEnquiry2Fragment extends Fragment {
 	
 	private DrawerLayout mDrawerLayout;
 	private ListView mDrawerList;
 	
 	
-	public CreateEnquiryProfileFragment(DrawerLayout mdrawer,ListView list){
+	public CreateEnquiry2Fragment(DrawerLayout mdrawer,ListView list){
 		mDrawerLayout=mdrawer;
 		mDrawerList=list;
 		

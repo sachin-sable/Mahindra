@@ -9,11 +9,13 @@ import android.app.Activity;
 import android.app.Fragment;
 import android.app.FragmentManager;
 import android.content.res.Configuration;
+import android.content.res.Resources;
 import android.content.res.TypedArray;
 import android.os.Bundle;
 import android.support.v4.app.ActionBarDrawerToggle;
 import android.support.v4.widget.DrawerLayout;
 import android.util.Log;
+import android.util.TypedValue;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -91,14 +93,23 @@ public class MainActivity extends Activity {
 		adapter = new NavDrawerListAdapter(getApplicationContext(),
 				navDrawerItems);
 		mDrawerList.setAdapter(adapter);
-
+		mDrawerList.post(new Runnable() {
+	        @Override
+	        public void run() {
+	            Resources resources = getResources();
+	            float width = TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 123, resources.getDisplayMetrics());
+	            DrawerLayout.LayoutParams params = (DrawerLayout.LayoutParams) mDrawerList.getLayoutParams();
+	            params.width = (int) (width);
+	            mDrawerList.setLayoutParams(params);
+	        }
+	    });
 		// enabling action bar app icon and behaving it as toggle button
 		getActionBar().setDisplayHomeAsUpEnabled(true);
 		getActionBar().hide();
 		// getActionBar().setHomeButtonEnabled(true);
 
 		mDrawerToggle = new ActionBarDrawerToggle(this, mDrawerLayout,
-				R.drawable.ic_drawer, // nav menu toggle icon
+				R.drawable.collapse, // nav menu toggle icon
 				R.string.app_name, // nav drawer open - description for
 									// accessibility
 				R.string.app_name // nav drawer close - description for
@@ -180,7 +191,7 @@ public class MainActivity extends Activity {
 			fragment = new DashboardFragment(mDrawerLayout, mDrawerList);
 			break;
 		case 1:
-			fragment = new HomeFragment(mDrawerLayout, mDrawerList);
+			fragment = new CreateEnquire1Fragment(mDrawerLayout, mDrawerList);
 			break;
 
 		case 2:

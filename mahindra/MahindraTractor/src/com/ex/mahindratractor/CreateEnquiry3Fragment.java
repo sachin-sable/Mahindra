@@ -11,13 +11,13 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.ListView;
 
-public class CreateEnquiryFormFragment extends Fragment {
+public class CreateEnquiry3Fragment extends Fragment {
 	
 	private DrawerLayout mDrawerLayout;
 	private ListView mDrawerList;
 	
 	
-	public CreateEnquiryFormFragment(DrawerLayout mdrawer,ListView list){
+	public CreateEnquiry3Fragment(DrawerLayout mdrawer,ListView list){
 		mDrawerLayout=mdrawer;
 		mDrawerList=list;
 		
@@ -45,7 +45,7 @@ public class CreateEnquiryFormFragment extends Fragment {
 			@Override
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
-				Fragment fragment = new CreateEnquiryProfileFragment(mDrawerLayout,mDrawerList);
+				Fragment fragment = new CreateEnquiry2Fragment(mDrawerLayout,mDrawerList);
 		        //FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
 				FragmentTransaction fragmentTransaction=getFragmentManager().beginTransaction();
 				fragmentTransaction.replace(R.id.frame_container, fragment, "FragmentProductDetails");

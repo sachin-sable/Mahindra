@@ -19,10 +19,10 @@
     <!-- Keep them in order as the titles are in -->
     <array name="nav_drawer_icons">
         <item>@drawable/menu</item>
-        <item>@drawable/create</item>
-        <item>@drawable/followup</item>
-        <item>@drawable/closure</item>
-        <item>@drawable/search</item>
+        <item>@drawable/create_enquiry_menu_selector</item>
+        <item>@drawable/follow_up_enquiry_menu_selector</item>
+        <item>@drawable/closure_enquiry_menu_selector</item>
+        <item>@drawable/search_enquiry_menu_selector</item>
        
     </array>
 
