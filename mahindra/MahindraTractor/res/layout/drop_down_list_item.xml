@@ -6,7 +6,6 @@
     android:button="@null"
     android:drawableLeft="@drawable/radio"
     android:drawablePadding="20dp"
-    
     android:paddingLeft="20dp"
     android:paddingRight="10dp"
     android:textColor="#FF1C3E" >

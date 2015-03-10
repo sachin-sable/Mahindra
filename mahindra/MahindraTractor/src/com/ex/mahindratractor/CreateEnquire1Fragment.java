@@ -17,6 +17,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.RadioButton;
@@ -53,7 +54,7 @@ public class CreateEnquire1Fragment extends Fragment implements OnClickListener{
 		expectedPurchaseDate.setFocusable(false);
 		expectedPurchaseDate.setClickable(true);
 		expectedPurchaseDate.setOnClickListener(this);
-		Button next_btn = (Button) rootView.findViewById(R.id.cq_next_btn);
+		ImageButton next_btn = (ImageButton) rootView.findViewById(R.id.nextButton);
 		createTehsilDropdown();
 		createVillageDropdown();
 		createModelDropdown();
@@ -93,7 +94,7 @@ public class CreateEnquire1Fragment extends Fragment implements OnClickListener{
 				.findViewById(R.id.dropDownList);
 		ImageView selectVillageIcon = (ImageView) view
 				.findViewById(R.id.titleImage);
-		selectVillageIcon.setImageResource(R.drawable.select_village);
+		selectVillageIcon.setImageResource(R.drawable.select_model);
 		final EditText selectVillageText = (EditText) view
 				.findViewById(R.id.headerText);
 		selectVillageText.setFocusable(false);
@@ -147,7 +148,7 @@ public class CreateEnquire1Fragment extends Fragment implements OnClickListener{
 				.findViewById(R.id.dropDownList);
 		ImageView selectTehsilIcon = (ImageView) view
 				.findViewById(R.id.titleImage);
-		selectTehsilIcon.setImageResource(R.drawable.tehsils_icon);
+		selectTehsilIcon.setImageResource(R.drawable.select_tehsil);
 		final EditText selectTehsilText = (EditText) view
 				.findViewById(R.id.headerText);
 		selectTehsilText.setHint("Select Tehsil");

@@ -102,7 +102,7 @@ public class CreateEnquiry2Fragment extends Fragment {
 				.findViewById(R.id.headerText);
 		selectVillageText.setFocusable(false);
 		selectVillageText.setClickable(true);
-		selectVillageText.setHint("Select Model");
+		selectVillageText.setHint("Select Buyer Type");
 		for (int i = 0; i < 3; i++) {
 			DropDownItem downItem = new DropDownItem();
 			downItem.id = i;

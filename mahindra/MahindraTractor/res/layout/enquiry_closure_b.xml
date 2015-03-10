@@ -3,11 +3,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@drawable/bg1" >
+    android:background="@drawable/bg" >
     
     <ImageView android:layout_width="match_parent"
-        android:layout_height="70dp"
-        android:src="@drawable/title_banner"
+        android:layout_height="wrap_content"
+        android:src="@drawable/header"
         android:scaleType="fitXY"
         />
     
@@ -45,7 +45,7 @@
 
        
     </LinearLayout>
-<RelativeLayout
+<!-- <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="30dp" 
         android:layout_marginLeft="15dp"
@@ -304,13 +304,61 @@
             android:layout_centerVertical="true"
             android:layout_marginRight="5dp"
             android:src="@drawable/checkbox_idle" />
-    </RelativeLayout>
-    <Button
-        android:id="@+id/ce_sub_btn"
+    </RelativeLayout> -->
+    <ScrollView
+        android:id="@+id/formScroll"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="10dp"
+        android:layout_weight="1"
+        android:fillViewport="true" >
+
+        <LinearLayout
+            android:id="@+id/createEnquireForm1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:paddingBottom="2dp"
+                android:paddingLeft="15dp"
+                android:paddingTop="2dp"
+                android:text="Enquiry - 5567"
+                android:textColor="#FF1C3E"
+                android:textStyle="bold"
+                android:background="@drawable/text_field"
+                android:textSize="16sp" />
+            <EditText
+                android:id="@+id/purchaseDate"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/text_field"
+                android:drawableLeft="@drawable/e_date_icon"
+                android:drawablePadding="10dp"
+                android:hint="Closure Date"
+                android:inputType="textNoSuggestions"
+                android:maxLength="30"
+                android:padding="5dp"
+                android:textColor="#FF1C3E"
+                android:textColorHint="#88FF1c3E" />
+            <include
+                android:id="@+id/selectCancelReason"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                layout="@layout/dropdown_view" />
+        </LinearLayout>
+    </ScrollView>
+    <ImageButton
+        android:id="@+id/submitButton"
         android:layout_width="wrap_content"
-        android:layout_height="50dp"
+        android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginTop="20dp"
-        android:background="@drawable/submit" />
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/submit_selector" />
 
 </LinearLayout>

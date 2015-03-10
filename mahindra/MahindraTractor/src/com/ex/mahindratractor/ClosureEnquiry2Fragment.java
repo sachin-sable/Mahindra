@@ -11,13 +11,13 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.ListView;
 
-public class ClosureEnquiryFragment extends Fragment {
+public class ClosureEnquiry2Fragment extends Fragment {
 	
 	private DrawerLayout mDrawerLayout;
 	private ListView mDrawerList;
 	
 	
-	public ClosureEnquiryFragment(DrawerLayout mdrawer,ListView list){
+	public ClosureEnquiry2Fragment(DrawerLayout mdrawer,ListView list){
 		mDrawerLayout=mdrawer;
 		mDrawerList=list;
 		
@@ -27,10 +27,10 @@ public class ClosureEnquiryFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
             Bundle savedInstanceState) {
  
-        View rootView = inflater.inflate(R.layout.enquiry_closure, container, false);
+        View rootView = inflater.inflate(R.layout.enquiry_closure_b, container, false);
         
         ImageView img=(ImageView)rootView.findViewById(R.id.home);
-        Button next_btn=(Button)rootView.findViewById(R.id.ce_sub_btn);
+        Button next_btn=(Button)rootView.findViewById(R.id.submitButton);
         
         img.setOnClickListener(new View.OnClickListener() {
 			
@@ -45,12 +45,12 @@ public class ClosureEnquiryFragment extends Fragment {
 			@Override
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
-				Fragment fragment = new ClosureBFragment(mDrawerLayout,mDrawerList);
-		        //FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
-				FragmentTransaction fragmentTransaction=getFragmentManager().beginTransaction();
-				fragmentTransaction.replace(R.id.frame_container, fragment, "FragmentProductDetails");
-				//fragmentTransaction.addToBackStack(null);
-			    fragmentTransaction.commit();
+//				Fragment fragment = new CreateEnquiryFormFragment(mDrawerLayout,mDrawerList);
+//		        //FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
+//				FragmentTransaction fragmentTransaction=getFragmentManager().beginTransaction();
+//				fragmentTransaction.replace(R.id.frame_container, fragment, "FragmentProductDetails");
+//				//fragmentTransaction.addToBackStack(null);
+//			    fragmentTransaction.commit();
 			}
 		});
         
