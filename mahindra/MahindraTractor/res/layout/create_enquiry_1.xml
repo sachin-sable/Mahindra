@@ -40,44 +40,38 @@
             android:layout_marginLeft="10dp"
             android:text="Create Enquiry profile"
             android:textColor="#ffffff"
-            android:textSize="22dp" />
+            android:textSize="22sp" />
     </LinearLayout>
 
-    <!-- <LinearLayout
-        android:layout_width="200dp"
-        android:layout_height="30dp"
+     <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginTop="10dp"
-        android:background="#FFffff"
-        android:gravity="center_vertical"
-        android:orientation="horizontal"
-        android:weightSum="3" >
-
-        <ImageView
-            android:id="@+id/imageView2"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:src="@drawable/date" />
-
+        android:layout_marginTop="10dp" >
+		<ImageView android:id="@+id/calendarImage"
+		    android:layout_width="40dp"
+		    android:layout_height="40dp"
+		    android:src="@drawable/date1"/>
         <TextView
-            android:id="@+id/textView9"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_margin="1dp"
-            android:layout_weight="2"
-            android:background="#E41937"
+            android:id="@+id/enquiryDate"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:background="@drawable/login_box"
             android:gravity="center"
-            android:text="Expiry Date"
-            android:textColor="#ffffff"
-            android:textSize="14dp" />
-    </LinearLayout> -->
-	<TextView android:id="@+id/selectDate"
-	    android:layout_width="wrap_content"
-	    android:layout_height="wrap_content"
-	    android:background="@drawable/login_box"
-	    android:layout_gravity="center"
-	    android:drawableLeft="@drawable/date1"/>
+            android:text="Enquiry Date"
+            android:textColor="#FFFFFF" />
+    </LinearLayout> 
+   <!--  <TextView
+            android:id="@+id/enquiryDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/login_box"
+            android:gravity="center"
+            android:text="Enquiry Date"
+            android:layout_marginTop="10dp"
+            android:textColor="#FFFFFF" 
+            android:drawableLeft="@drawable/e_date_icon"/>
+ -->
     <ScrollView
         android:id="@+id/formScroll"
         android:layout_width="match_parent"
@@ -121,54 +115,28 @@
                 android:textColor="#FF1C3E"
                 android:textColorHint="#88FF1c3E" />
 
-            <!-- <com.ex.views.MenuDropDown
-                android:id="@+id/customSpinner"
+            <include
+                android:id="@+id/selectTehsil"
                 android:layout_width="wrap_content"
-               android:layout_height="40dp"
+                android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:background="@drawable/text_field"
-                android:drawSelectorOnTop="true"
-                android:gravity="bottom"
-                app:dropDownAnchor="@+id/parent" > 
-            </com.ex.views.MenuDropDown>-->
-            <TextView android:id="@+id/selectTehsil"
+                layout="@layout/dropdown_view" />
+
+            <include
+                android:id="@+id/selectVillage"
                 android:layout_width="wrap_content"
-                android:layout_height="40dp"
+                android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:padding="5dp"
-                android:drawablePadding="10dp"
-                android:text="Select Tehsil"
-                android:textColor="#FF1C3E"
-                android:background="@drawable/text_field"
-                android:drawableLeft="@drawable/tehsils_icon"
-                android:drawableRight="@drawable/arrow"
-              />
-            <TextView android:id="@+id/selectVillage"
+                layout="@layout/dropdown_view" />
+
+            <include
+                android:id="@+id/selectModel"
                 android:layout_width="wrap_content"
-                android:layout_height="40dp"
+                android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:padding="5dp"
-                android:textColor="#FF1C3E"
-                android:drawablePadding="10dp"
-                android:text="Select Village"
-                
-                android:background="@drawable/text_field"
-                android:drawableLeft="@drawable/select_village"
-                android:drawableRight="@drawable/arrow"
-              />
-           <TextView android:id="@+id/selectModel"
-                android:layout_width="wrap_content"
-                android:layout_height="40dp"
-                android:layout_marginTop="10dp"
-                android:padding="5dp"
-                android:drawablePadding="10dp"
-                android:text="Select Model"
-                android:textColor="#FF1C3E"
-                android:background="@drawable/text_field"
-                android:drawableLeft="@drawable/model"
-                android:drawableRight="@drawable/arrow"
-              />
-           <EditText
+                layout="@layout/dropdown_view" />
+
+            <EditText
                 android:id="@+id/purchaseDate"
                 android:layout_width="wrap_content"
                 android:layout_height="40dp"
@@ -177,12 +145,13 @@
                 android:drawableLeft="@drawable/e_date_icon"
                 android:drawablePadding="10dp"
                 android:hint="Expected Purchase Date"
-                android:inputType="textPersonName"
+                android:inputType="textNoSuggestions"
                 android:maxLength="30"
                 android:padding="5dp"
                 android:textColor="#FF1C3E"
                 android:textColorHint="#88FF1c3E" />
-           <EditText
+
+            <EditText
                 android:id="@+id/mobileNumber"
                 android:layout_width="wrap_content"
                 android:layout_height="40dp"
@@ -191,7 +160,7 @@
                 android:drawableLeft="@drawable/mobile"
                 android:drawablePadding="10dp"
                 android:hint="Mobile Number"
-                android:inputType="textPersonName"
+                android:inputType="number"
                 android:maxLength="30"
                 android:padding="5dp"
                 android:textColor="#FF1C3E"
@@ -205,7 +174,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginBottom="50dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         android:background="@drawable/next_selector" />
 
 </LinearLayout>
