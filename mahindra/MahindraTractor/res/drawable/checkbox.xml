@@ -4,5 +4,5 @@
              android:drawable="@drawable/check_box_onclick" /> 
        <item android:state_pressed="true"
              android:drawable="@drawable/check_box_onclick" /> 
-       <item android:drawable="@drawable/checkbox_idle" /> 
+       <item android:drawable="@drawable/check_box_idle" /> 
    </selector>

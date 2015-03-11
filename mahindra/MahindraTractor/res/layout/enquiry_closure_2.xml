@@ -8,7 +8,6 @@
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        
         android:src="@drawable/header" />
 
     <LinearLayout
@@ -37,7 +36,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
             android:layout_marginLeft="10dp"
-            android:text="Enquiry Follow up"
+            android:text="Enquiry Closure"
             android:textColor="#ffffff"
             android:textSize="22dp" />
     </LinearLayout>
@@ -46,8 +45,8 @@
         android:id="@+id/formScroll"
         android:layout_width="wrap_content"
         android:layout_height="0dp"
-        android:layout_margin="10dp"
         android:layout_gravity="center_horizontal"
+        android:layout_margin="10dp"
         android:layout_weight="1"
         android:fillViewport="true" >
 
@@ -57,25 +56,7 @@
             android:layout_height="wrap_content"
             android:orientation="vertical" >
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:paddingBottom="2dp"
-                android:paddingLeft="15dp"
-                android:paddingTop="2dp"
-                android:text="Enquiry - 5567"
-                android:textColor="#FF1C3E"
-                android:textStyle="bold"
-                android:background="@drawable/text_field"
-                android:textSize="16sp" />
-            <include
-                android:id="@+id/interestedModel"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                layout="@layout/dropdown_view" />
-             <EditText
+            <EditText
                 android:id="@+id/purchaseDate"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -83,29 +64,45 @@
                 android:background="@drawable/text_field"
                 android:drawableLeft="@drawable/expected_purchse_date"
                 android:drawablePadding="10dp"
-                android:hint="Expected Purchase Date"
+                android:hint="Closure Date"
                 android:inputType="textNoSuggestions"
                 android:maxLength="30"
                 android:paddingLeft="5dp"
                 android:textColor="#FF1C3E"
                 android:textColorHint="#88FF1c3E" />
-             <EditText
-                android:id="@+id/nextVisitDate"
+
+            <include
+                android:id="@+id/selectMake"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:background="@drawable/text_field"
-                android:drawableLeft="@drawable/expected_purchse_date"
-                android:drawablePadding="10dp"
-                android:hint="Next Visit Date"
-                android:inputType="textNoSuggestions"
-                android:maxLength="30"
-                android:paddingLeft="5dp"
-                android:textColor="#FF1C3E"
-                android:textColorHint="#88FF1c3E" />
+                layout="@layout/dropdown_view" />
+
+            <include
+                android:id="@+id/selectModel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                layout="@layout/dropdown_view" />
+
+            <LinearLayout
+                android:id="@+id/checkBoxLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical" >
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/checkBoxLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical" >
+            </LinearLayout>
         </LinearLayout>
     </ScrollView>
-   
+
     <ImageButton
         android:id="@+id/submitButton"
         android:layout_width="wrap_content"
@@ -113,7 +110,6 @@
         android:layout_gravity="center"
         android:layout_marginBottom="90dp"
         android:layout_marginTop="10dp"
-        android:background="@null"
-        android:src="@drawable/submit_selector" />
+        android:background="@drawable/submit_selector" />
 
 </LinearLayout>

@@ -85,6 +85,8 @@ public class CreateEnquiry2Fragment extends Fragment {
 			View checkboxLayout=LayoutInflater.from(getActivity()).inflate(R.layout.checkbox_layout, null);
 			TextView checkText=(TextView) checkboxLayout.findViewById(R.id.checkText);
 			checkText.setText("Crop "+(i+1));
+			ImageView icon=(ImageView) checkboxLayout.findViewById(R.id.icon);
+			icon.setVisibility(View.GONE);
 			linearLayout.addView(checkboxLayout);
 		}
 	}

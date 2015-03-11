@@ -8,7 +8,6 @@
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        
         android:src="@drawable/header" />
 
     <LinearLayout
@@ -42,18 +41,6 @@
             android:textSize="22dp" />
     </LinearLayout>
 
-    <TextView
-        android:id="@+id/enquiryDate"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="10dp"
-        android:background="@drawable/enquiry_date_tab"
-        android:drawableLeft="@drawable/calendar"
-        android:gravity="center"
-        android:text="Enquiry Date"
-        android:textColor="#FFFFFF" />
-
     <ScrollView
         android:id="@+id/formScroll"
         android:layout_width="wrap_content"
@@ -74,10 +61,35 @@
                 android:layout_height="wrap_content"
                 android:background="@drawable/text_field"
                 android:gravity="center"
+                android:paddingBottom="2dp"
+                android:paddingLeft="15dp"
+                android:paddingTop="2dp"
                 android:text="Enquiry - 5567"
                 android:textColor="#FF1C3E"
                 android:textSize="16sp"
                 android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/purchaseDate"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/text_field"
+                android:drawableLeft="@drawable/expected_purchse_date"
+                android:drawablePadding="10dp"
+                android:hint="Closure Date"
+                android:inputType="textNoSuggestions"
+                android:maxLength="30"
+                android:padding="5dp"
+                android:textColor="#FF1C3E"
+                android:textColorHint="#88FF1c3E" />
+
+            <include
+                android:id="@+id/selectCancelReason"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                layout="@layout/dropdown_view" />
 
             <include
                 android:id="@+id/selectClosureReason"
@@ -88,15 +100,28 @@
         </LinearLayout>
     </ScrollView>
 
-    <ImageButton
-        android:id="@+id/nextButton"
+    <FrameLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginBottom="90dp"
-        android:layout_marginTop="10dp"
-        android:background="@null"
-        android:visibility="gone"
-        android:src="@drawable/next_selector" />
+        android:layout_marginTop="10dp" >
+
+        <ImageButton
+            android:id="@+id/nextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            android:background="@drawable/next_selector" />
+
+        <ImageButton
+            android:id="@+id/submitButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            android:background="@drawable/submit_selector" />
+    </FrameLayout>
 
 </LinearLayout>

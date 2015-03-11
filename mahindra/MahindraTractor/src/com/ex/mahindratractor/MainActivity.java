@@ -202,7 +202,7 @@ public class MainActivity extends Activity {
 			fragment = new ClosureEnquiry1Fragment(mDrawerLayout, mDrawerList);
 			break;
 		case 4:
-			fragment = new SearchEnquiryFragment(mDrawerLayout, mDrawerList);
+			fragment = new SearchEnquiry1Fragment(mDrawerLayout, mDrawerList);
 			break;
 
 		default:

@@ -6,12 +6,14 @@ import java.util.List;
 import com.ex.slidingmenu.model.DropDownItem;
 
 import android.app.Fragment;
+import android.app.FragmentTransaction;
 import android.os.Bundle;
 import android.support.v4.widget.DrawerLayout;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.RadioButton;
@@ -19,13 +21,13 @@ import android.widget.RadioGroup;
 import android.widget.RadioGroup.LayoutParams;
 import android.widget.RadioGroup.OnCheckedChangeListener;
 
-public class SearchEnquiryFragment extends Fragment {
+public class SearchEnquiry1Fragment extends Fragment {
 	
 	private DrawerLayout mDrawerLayout;
 	private ListView mDrawerList;
 	
 	private View rootView;
-	public SearchEnquiryFragment(DrawerLayout mdrawer,ListView list){
+	public SearchEnquiry1Fragment(DrawerLayout mdrawer,ListView list){
 		mDrawerLayout=mdrawer;
 		mDrawerList=list;
 		
@@ -35,16 +37,33 @@ public class SearchEnquiryFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
             Bundle savedInstanceState) {
  
-         rootView = inflater.inflate(R.layout.enquiry_search, container, false);
+         rootView = inflater.inflate(R.layout.enquiry_search_1, container, false);
         
         ImageView img=(ImageView)rootView.findViewById(R.id.home);
-        
+        ImageButton searchButton=(ImageButton)rootView.findViewById(R.id.searchButton);
         img.setOnClickListener(new View.OnClickListener() {
 			
 			@Override
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
 				mDrawerLayout.openDrawer(mDrawerList);
+			}
+		});
+        searchButton.setOnClickListener(new View.OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				
+				Fragment fragment = new SearchEnquiry2Fragment(mDrawerLayout,
+						mDrawerList);
+				// FragmentManager fragmentManager =
+				// getActivity().getSupportFragmentManager();
+				FragmentTransaction fragmentTransaction = getFragmentManager()
+						.beginTransaction();
+				fragmentTransaction.replace(R.id.frame_container, fragment,
+						"FragmentSearch2");
+				// fragmentTransaction.addToBackStack(null);
+				fragmentTransaction.commit();
 			}
 		});
          createTehsilDropdown();

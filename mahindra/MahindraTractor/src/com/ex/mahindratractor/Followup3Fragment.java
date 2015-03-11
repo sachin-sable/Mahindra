@@ -72,7 +72,7 @@ public class Followup3Fragment extends Fragment implements OnClickListener{
 				.findViewById(R.id.dropDownList);
 		ImageView selectTehsilIcon = (ImageView) view
 				.findViewById(R.id.titleImage);
-		selectTehsilIcon.setImageResource(R.drawable.model);
+		selectTehsilIcon.setImageResource(R.drawable.select_model);
 		final EditText selectTehsilText = (EditText) view
 				.findViewById(R.id.headerText);
 		selectTehsilText.setHint("Interested Model");
