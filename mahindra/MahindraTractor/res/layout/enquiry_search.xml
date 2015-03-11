@@ -8,7 +8,7 @@
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:scaleType="fitXY"
+       
         android:src="@drawable/header" />
 
     <LinearLayout
@@ -37,7 +37,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
             android:layout_marginLeft="10dp"
-            android:text="Enquiry Search"
+            android:text="Search Enquiry"
             android:textColor="#ffffff"
             android:textSize="22dp" />
     </LinearLayout>

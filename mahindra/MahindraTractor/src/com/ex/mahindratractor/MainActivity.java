@@ -195,7 +195,7 @@ public class MainActivity extends Activity {
 			break;
 
 		case 2:
-			fragment = new FollowUpFragment(mDrawerLayout, mDrawerList);
+			fragment = new Followup1Fragment(mDrawerLayout, mDrawerList);
 			break;
 
 		case 3:

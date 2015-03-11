@@ -24,13 +24,13 @@ import android.widget.RadioGroup;
 import android.widget.RadioGroup.LayoutParams;
 import android.widget.RadioGroup.OnCheckedChangeListener;
 
-public class FollowUpFragment extends Fragment implements OnClickListener{
+public class Followup3Fragment extends Fragment implements OnClickListener{
 	
 	private DrawerLayout mDrawerLayout;
 	private ListView mDrawerList;
 	private EditText purchaseDate, nextVisitDate;
 	private View rootView;
-	public FollowUpFragment(DrawerLayout mdrawer,ListView list){
+	public Followup3Fragment(DrawerLayout mdrawer,ListView list){
 		mDrawerLayout=mdrawer;
 		mDrawerList=list;
 		

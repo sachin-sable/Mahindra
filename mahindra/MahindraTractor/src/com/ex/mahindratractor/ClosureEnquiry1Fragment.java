@@ -31,7 +31,7 @@ public class ClosureEnquiry1Fragment extends Fragment {
 	
 	private DrawerLayout mDrawerLayout;
 	private ListView mDrawerList;
-	View rootView;
+	private View rootView;
 	private TextView enquiryDate;
 	public ClosureEnquiry1Fragment(DrawerLayout mdrawer,ListView list){
 		mDrawerLayout=mdrawer;
