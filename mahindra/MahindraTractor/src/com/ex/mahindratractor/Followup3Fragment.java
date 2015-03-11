@@ -40,7 +40,7 @@ public class Followup3Fragment extends Fragment implements OnClickListener{
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
             Bundle savedInstanceState) {
  
-        rootView = inflater.inflate(R.layout.enquiry_follow_up, container, false);
+        rootView = inflater.inflate(R.layout.enquiry_follow_up_3, container, false);
         purchaseDate=(EditText) rootView.findViewById(R.id.purchaseDate);
         purchaseDate.setOnClickListener(this);
         

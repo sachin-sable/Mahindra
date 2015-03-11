@@ -34,7 +34,7 @@ public class Followup1Fragment extends Fragment {
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState) {
 
-		rootView = inflater.inflate(R.layout.enquiry_follow_up_a, container,
+		rootView = inflater.inflate(R.layout.enquiry_follow_up_1, container,
 				false);
 		listView = (ListView) rootView.findViewById(R.id.followupList);
 		ImageView img = (ImageView) rootView.findViewById(R.id.home);
