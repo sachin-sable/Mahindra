@@ -21,6 +21,7 @@ import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
+import android.widget.TableLayout;
 import android.widget.RadioGroup.LayoutParams;
 import android.widget.RadioGroup.OnCheckedChangeListener;
 
@@ -30,6 +31,7 @@ public class Followup3Fragment extends Fragment implements OnClickListener{
 	private ListView mDrawerList;
 	private EditText purchaseDate, nextVisitDate;
 	private View rootView;
+	private TableLayout exhchangeBuyerTable, repeatBuyerTable;
 	public Followup3Fragment(DrawerLayout mdrawer,ListView list){
 		mDrawerLayout=mdrawer;
 		mDrawerList=list;
@@ -41,6 +43,8 @@ public class Followup3Fragment extends Fragment implements OnClickListener{
             Bundle savedInstanceState) {
  
         rootView = inflater.inflate(R.layout.enquiry_follow_up_3, container, false);
+        exhchangeBuyerTable=(TableLayout) rootView.findViewById(R.id.exchangeBuyerTable);
+        repeatBuyerTable=(TableLayout) rootView.findViewById(R.id.repeatBuyerTable);
         purchaseDate=(EditText) rootView.findViewById(R.id.purchaseDate);
         purchaseDate.setOnClickListener(this);
         

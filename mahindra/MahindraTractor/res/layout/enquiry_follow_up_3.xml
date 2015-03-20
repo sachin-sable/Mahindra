@@ -8,7 +8,6 @@
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        
         android:src="@drawable/header" />
 
     <LinearLayout
@@ -37,17 +36,17 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
             android:layout_marginLeft="10dp"
-            android:text="Enquiry Follow up"
+            android:text="Enquiry Details"
             android:textColor="#ffffff"
             android:textSize="22dp" />
     </LinearLayout>
 
     <ScrollView
         android:id="@+id/formScroll"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_margin="10dp"
         android:layout_gravity="center_horizontal"
+        android:layout_margin="8dp"
         android:layout_weight="1"
         android:fillViewport="true" >
 
@@ -57,28 +56,758 @@
             android:layout_height="wrap_content"
             android:orientation="vertical" >
 
-            <TextView
-                android:layout_width="wrap_content"
+            <TableLayout
+                android:id="@+id/table1"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:gravity="center"
-                android:paddingBottom="2dp"
-                android:paddingLeft="15dp"
-                android:paddingTop="2dp"
-                android:text="Enquiry - 5567"
-                android:textColor="#FF1C3E"
-                android:textStyle="bold"
-                android:background="@drawable/text_field"
-                android:textSize="16sp" />
+                android:background="#ffffff"
+               
+                android:showDividers="none" >
+
+                <TableRow
+                    android:id="@+id/rowEnquiryId"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal"
+                   >
+
+                    <TextView
+                        android:id="@+id/enquiryIdLabel"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:drawableLeft="@drawable/enquiry_id"
+                        android:drawablePadding="5dp"
+                        android:textStyle="bold"
+                        android:gravity="center_vertical|left"
+                        android:maxLength="30"
+                        android:paddingLeft="5dp"
+                        android:text="Enquiry ID"
+                        android:textColor="#FF1C3E"
+                        android:textSize="14sp" />
+
+                    <View
+                        android:id="@+id/line"
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="#e41937" />
+
+                    <TextView
+                        android:id="@+id/enquiryIdValue"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        android:gravity="center_vertical"
+                        android:maxLength="30"
+                        android:paddingLeft="5dp"
+                        android:text="12342"
+                        android:textColor="#FF1C3E"
+                        android:textSize="14sp" />
+                </TableRow>
+
+                <View
+                    android:id="@+id/line1"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#e41937" />
+
+                <TableRow
+                    android:id="@+id/rowEnquiryDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal"
+                   >
+
+                    <TextView
+                        android:id="@+id/enquiryDateLabel"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:drawableLeft="@drawable/expected_purchse_date"
+                        android:drawablePadding="5dp"
+                        android:textStyle="bold"
+                        android:gravity="center_vertical|left"
+                        android:maxLength="30"
+                        android:paddingLeft="5dp"
+                        android:text="Enquiry Date"
+                        android:textColor="#FF1C3E"
+                        android:textSize="14sp" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="#e41937" />
+
+                    <TextView
+                        android:id="@+id/enquiryDateValue"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        android:gravity="center_vertical"
+                        android:maxLength="30"
+                        android:paddingLeft="5dp"
+                        android:text="12/3/2015"
+                        android:textColor="#FF1C3E"
+                        android:textSize="14sp" />
+                </TableRow>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#e41937" />
+
+                <TableRow
+                    android:id="@+id/rowCustomerName"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal"
+                   >
+
+                    <TextView
+                        android:id="@+id/customerNameLabel"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:drawableLeft="@drawable/customer_name"
+                        android:drawablePadding="5dp"
+                        android:textStyle="bold"
+                        android:gravity="center_vertical|left"
+                        android:maxLength="30"
+                        android:paddingLeft="5dp"
+                        android:text="Customer Name"
+                        android:textColor="#FF1C3E"
+                        android:textSize="14sp" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="#e41937" />
+
+                    <TextView
+                        android:id="@+id/customerNameValue"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        android:gravity="center_vertical"
+                        android:maxLength="30"
+                        android:paddingLeft="5dp"
+                        android:text="Customer 1"
+                        android:textColor="#FF1C3E"
+                        android:textSize="14sp" />
+                </TableRow>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#e41937" />
+
+                <TableRow
+                    android:id="@+id/rowFatherName"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal"
+                   >
+
+                    <TextView
+                        android:id="@+id/fatherNameLabel"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:drawableLeft="@drawable/father_name"
+                        android:drawablePadding="5dp"
+                        android:textStyle="bold"
+                        android:gravity="center_vertical|left"
+                        android:maxLength="30"
+                        android:paddingLeft="5dp"
+                        android:text="Father Name"
+                        android:textColor="#FF1C3E"
+                        android:textSize="14sp" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="#e41937" />
+
+                    <TextView
+                        android:id="@+id/fatherNameValue"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        android:gravity="center_vertical"
+                        android:maxLength="30"
+                        android:paddingLeft="5dp"
+                        android:text="Customer 2"
+                        android:textColor="#FF1C3E"
+                        android:textSize="14sp" />
+                </TableRow>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#e41937" />
+
+                <TableRow
+                    android:id="@+id/rowTehsil"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal"
+                   >
+
+                    <TextView
+                        android:id="@+id/tehsilLabel"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:drawableLeft="@drawable/select_tehsil"
+                        android:drawablePadding="5dp"
+                        android:textStyle="bold"
+                        android:gravity="center_vertical|left"
+                        android:maxLength="30"
+                        android:paddingLeft="5dp"
+                        android:text="Tehsil"
+                        android:textColor="#FF1C3E"
+                        android:textSize="14sp" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="#e41937" />
+
+                    <TextView
+                        android:id="@+id/tehsilValue"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        android:gravity="center_vertical"
+                        android:maxLength="30"
+                        android:paddingLeft="5dp"
+                        android:text="Tehsil 2"
+                        android:textColor="#FF1C3E"
+                        android:textSize="14sp" />
+                </TableRow>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#e41937" />
+
+                <TableRow
+                    android:id="@+id/rowVillage"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal"
+                   >
+
+                    <TextView
+                        android:id="@+id/villageLabel"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:drawableLeft="@drawable/select_village"
+                        android:drawablePadding="5dp"
+                        android:textStyle="bold"
+                        android:gravity="center_vertical|left"
+                        android:maxLength="30"
+                        android:paddingLeft="5dp"
+                        android:text="Village"
+                        android:textColor="#FF1C3E"
+                        android:textSize="14sp" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="#e41937" />
+
+                    <TextView
+                        android:id="@+id/villageValue"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        android:gravity="center_vertical"
+                        android:maxLength="30"
+                        android:paddingLeft="5dp"
+                        android:text="Village 2"
+                        android:textColor="#FF1C3E"
+                        android:textSize="14sp" />
+                </TableRow>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#e41937" />
+
+                <TableRow
+                    android:id="@+id/rowMobileNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal"
+                   >
+
+                    <TextView
+                        android:id="@+id/mobileNumberLabel"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:drawableLeft="@drawable/mobile"
+                        android:drawablePadding="5dp"
+                        android:textStyle="bold"
+                        android:gravity="center_vertical|left"
+                        android:maxLength="30"
+                        android:paddingLeft="5dp"
+                        android:text="Mobile Number"
+                        android:textColor="#FF1C3E"
+                        android:textSize="14sp" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="#e41937" />
+
+                    <TextView
+                        android:id="@+id/mobileNumberValue"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        android:gravity="center_vertical"
+                        android:maxLength="30"
+                        android:paddingLeft="5dp"
+                        android:text="1234567890"
+                        android:textColor="#FF1C3E"
+                        android:textSize="14sp" />
+                </TableRow>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#e41937" />
+
+                <TableRow
+                    android:id="@+id/rowbuyerType"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal"
+                   >
+
+                    <TextView
+                        android:id="@+id/buyerTypeLabel"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:drawableLeft="@drawable/buyer_type"
+                        android:drawablePadding="5dp"
+                        android:textStyle="bold"
+                        android:gravity="center_vertical|left"
+                        android:maxLength="30"
+                        android:paddingLeft="5dp"
+                        android:text="Buyer Type"
+                        android:textColor="#FF1C3E"
+                        android:textSize="14sp" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="#e41937" />
+
+                    <TextView
+                        android:id="@+id/buyerTypeValue"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        android:gravity="center_vertical"
+                        android:maxLength="30"
+                        android:paddingLeft="5dp"
+                        android:text="Buyer 1"
+                        android:textColor="#FF1C3E"
+                        android:textSize="14sp" />
+                </TableRow>
+            </TableLayout>
+
+            <TableLayout
+                android:id="@+id/exchangeBuyerTable"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="#ffffff"
+                android:showDividers="none" >
+
+                <TableRow
+                    android:id="@+id/rowExistingMake"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal"
+                   >
+
+                    <TextView
+                        android:id="@+id/existingMakeLabel"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:drawableLeft="@drawable/existing_make"
+                       android:drawablePadding="5dp"
+                        android:textStyle="bold"
+                        android:gravity="center_vertical|left"
+                        android:maxLength="30"
+                        android:paddingLeft="5dp"
+                        android:text="Existing Make"
+                        android:textColor="#FF1C3E"
+                        android:textSize="14sp" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="#e41937" />
+
+                    <TextView
+                        android:id="@+id/existingMakeValue"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        android:gravity="center_vertical"
+                        android:maxLength="30"
+                        android:paddingLeft="5dp"
+                        android:text="Make 1"
+                        android:textColor="#FF1C3E"
+                        android:textSize="14sp" />
+                </TableRow>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#e41937" />
+
+                <TableRow
+                    android:id="@+id/rowExistingModel"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal"
+                   >
+
+                    <TextView
+                        android:id="@+id/existingModelLabel"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:drawableLeft="@drawable/existing_model"
+                       android:drawablePadding="5dp"
+                        android:textStyle="bold"
+                        android:gravity="center_vertical|left"
+                        android:maxLength="30"
+                        android:paddingLeft="5dp"
+                        android:text="Existing Model"
+                        android:textColor="#FF1C3E"
+                        android:textSize="14sp" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="#e41937" />
+
+                    <TextView
+                        android:id="@+id/existingModelValue"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        android:gravity="center_vertical"
+                        android:maxLength="30"
+                        android:paddingLeft="5dp"
+                        android:text="Model 1"
+                        android:textColor="#FF1C3E"
+                        android:textSize="14sp" />
+                </TableRow>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#e41937" />
+
+                <TableRow
+                    android:id="@+id/rowYearOfPurchase"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal"
+                   >
+
+                    <TextView
+                        android:id="@+id/yearOfPurchaseLabel"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:drawableLeft="@drawable/year_of_purchase"
+                       android:drawablePadding="5dp"
+                        android:textStyle="bold"
+                        android:gravity="center_vertical|left"
+                        android:maxLength="30"
+                        android:paddingLeft="5dp"
+                        android:text="Year Of Purchase"
+                        android:textColor="#FF1C3E"
+                        android:textSize="14sp" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="#e41937" />
+
+                    <TextView
+                        android:id="@+id/yearOfPurchaseValue"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        android:gravity="center_vertical"
+                        android:maxLength="30"
+                        android:paddingLeft="5dp"
+                        android:text="12/3/2015"
+                        android:textColor="#FF1C3E"
+                        android:textSize="14sp" />
+                </TableRow>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#e41937" />
+
+                <TableRow
+                    android:id="@+id/rowCustomerPrice"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal"
+                   >
+
+                    <TextView
+                        android:id="@+id/customerPriceLabel"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:drawableLeft="@drawable/customer_price"
+                       android:drawablePadding="5dp"
+                        android:textStyle="bold"
+                        android:gravity="center_vertical|left"
+                        android:maxLength="30"
+                        android:paddingLeft="5dp"
+                        android:text="Customer Price"
+                        android:textColor="#FF1C3E"
+                        android:textSize="14sp" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="#e41937" />
+
+                    <TextView
+                        android:id="@+id/customerPriceValue"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        android:gravity="center_vertical"
+                        android:maxLength="30"
+                        android:paddingLeft="5dp"
+                        android:text="3121"
+                        android:textColor="#FF1C3E"
+                        android:textSize="14sp" />
+                </TableRow>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#e41937" />
+
+                <TableRow
+                    android:id="@+id/rowSalesManPrice"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal"
+                   >
+
+                    <TextView
+                        android:id="@+id/salesManPriceLabel"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:drawableLeft="@drawable/salesman_price"
+                        android:drawablePadding="5dp"
+                        android:textStyle="bold"
+                        android:gravity="center_vertical|left"
+                        android:maxLength="30"
+                        android:paddingLeft="5dp"
+                        android:text="Salesman Price"
+                        android:textColor="#FF1C3E"
+                        android:textSize="14sp" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="#e41937" />
+
+                    <TextView
+                        android:id="@+id/salesManPriceValue"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        android:gravity="center_vertical"
+                        android:maxLength="30"
+                        android:paddingLeft="5dp"
+                        android:text="2112"
+                        android:textColor="#FF1C3E"
+                        android:textSize="14sp" />
+                </TableRow>
+            </TableLayout>
+
+            <TableLayout
+                android:id="@+id/repeatBuyerTable"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="#ffffff"
+                android:showDividers="none" >
+
+                <TableRow
+                    android:id="@+id/rowExistingMake1"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal"
+                   >
+
+                    <TextView
+                        android:id="@+id/existingMakeLabel1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:drawableLeft="@drawable/existing_make"
+                       android:drawablePadding="5dp"
+                        android:textStyle="bold"
+                        android:gravity="center_vertical|left"
+                        android:maxLength="30"
+                        android:paddingLeft="5dp"
+                        android:text="Existing Make"
+                        android:textColor="#FF1C3E"
+                        android:textSize="14sp" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="#e41937" />
+
+                    <TextView
+                        android:id="@+id/existingMakeValue1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        android:gravity="center_vertical"
+                        android:maxLength="30"
+                        android:paddingLeft="5dp"
+                        android:text="Make 2"
+                        android:textColor="#FF1C3E"
+                        android:textSize="14sp" />
+                </TableRow>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#e41937" />
+
+                <TableRow
+                    android:id="@+id/rowExistingModel2"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal"
+                   >
+
+                    <TextView
+                        android:id="@+id/existingModelLabel2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:drawableLeft="@drawable/existing_model"
+                       android:drawablePadding="5dp"
+                        android:textStyle="bold"
+                        android:gravity="center_vertical|left"
+                        android:maxLength="30"
+                        android:paddingLeft="5dp"
+                        android:text="Existing Model"
+                        android:textColor="#FF1C3E"
+                        android:textSize="14sp" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="#e41937" />
+
+                    <TextView
+                        android:id="@+id/existingModelValue2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        android:gravity="center_vertical"
+                        android:maxLength="30"
+                        android:paddingLeft="5dp"
+                        android:text="Model 2"
+                        android:textColor="#FF1C3E"
+                        android:textSize="14sp" />
+                </TableRow>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#e41937" />
+
+                <TableRow
+                    android:id="@+id/rowYearOfPurchase3"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal"
+                   >
+
+                    <TextView
+                        android:id="@+id/yearOfPurchaseLabel3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:drawableLeft="@drawable/year_of_purchase"
+                        android:drawablePadding="5dp"
+                        android:textStyle="bold"
+                        android:gravity="center_vertical|left"
+                        android:maxLength="30"
+                        android:paddingLeft="5dp"
+                        android:text="Year Of Purchase"
+                        android:textColor="#FF1C3E"
+                        android:textSize="14sp" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="#e41937" />
+
+                    <TextView
+                        android:id="@+id/yearOfPurchaseValue3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        android:gravity="center_vertical"
+                        android:maxLength="30"
+                        android:paddingLeft="5dp"
+                        android:text="12/3/2015"
+                        android:textColor="#FF1C3E"
+                        android:textSize="14sp" />
+                </TableRow>
+            </TableLayout>
+
             <include
                 android:id="@+id/interestedModel"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
                 android:layout_marginTop="10dp"
                 layout="@layout/dropdown_view" />
-             <EditText
+
+            <EditText
                 android:id="@+id/purchaseDate"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
                 android:layout_marginTop="10dp"
                 android:background="@drawable/text_field"
                 android:drawableLeft="@drawable/expected_purchse_date"
@@ -89,10 +818,14 @@
                 android:paddingLeft="5dp"
                 android:textColor="#FF1C3E"
                 android:textColorHint="#88FF1c3E" />
-             <EditText
+
+            <EditText
                 android:id="@+id/nextVisitDate"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
                 android:layout_marginTop="10dp"
                 android:background="@drawable/text_field"
                 android:drawableLeft="@drawable/expected_purchse_date"
@@ -105,7 +838,7 @@
                 android:textColorHint="#88FF1c3E" />
         </LinearLayout>
     </ScrollView>
-   
+
     <ImageButton
         android:id="@+id/submitButton"
         android:layout_width="wrap_content"
